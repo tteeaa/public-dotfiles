@@ -35,8 +35,12 @@ scripts/
 ```
 ├── alacritty
 │   └── alacritty.toml
+├── gtk-3.0
+│   └── settings.ini
 ├── hypr
 │   └── hyprland.conf
+├── qt6ct
+│   └── qt6ct.conf
 ├── ranger
 │   └── rc.conf
 ├── synth-shell
@@ -49,5 +53,8 @@ scripts/
 │   ├── launch.sh
 │   └── style.css
 └── wofi
-    └── style.css
+│   └── style.css
+├── electron-flags.conf
+├── user-dirs.dirs
+└── user-dirs.locale
 ```
