@@ -10,9 +10,6 @@ scripts/
 ├── flag-finder.sh
 ├── flagpythonrsa.py
 ├── ftp-server-on
-├── GBP.py
-├── GBP.scd
-├── GBP.sh
 ├── get_server_stats.sh
 ├── gpu_temp.sh
 ├── jellyfin-check-storage.sh
@@ -37,8 +34,7 @@ scripts/
 .config/
 ```
 ├── alacritty
-│   ├── alacritty.toml
-│   └── config.yml
+│   └── alacritty.toml
 ├── hypr
 │   └── hyprland.conf
 ├── ranger
