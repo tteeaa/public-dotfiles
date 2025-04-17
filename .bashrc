@@ -25,9 +25,9 @@ alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias l.='exa -a | grep -E "^\."' # find all dot files
 
 # Adding Flags
-alias cp='cp -i' # confirm before deleting something
+alias cp='rsync -ah --progress' # adds progress bar and ETA
 alias mv='mv -i'
-alias rm='rm -i'
+alias rm='rm -i' # confirm before deleting something
 alias df='df -h' # human readable sizes
 alias free='free -m' # show sizes in MB
 
@@ -96,9 +96,9 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 # fun
 
 alias bunnyfetch='~/misc/bunnyfetch.sh'
-alias colorpanes='~/misc/colourpanes.sh'
-alias colorblocks='~/misc/colourblocks.sh'
-alias colorballs='~/misc/colourballs.sh'
+alias colorpanes='~/misc/colorpanes.sh'
+alias colorblocks='~/misc/colorblocks.sh'
+alias colorballs='~/misc/colorballs.sh'
 alias mobile-mount='~/scripts/mobile-mount.sh'
 alias gbp='~/scripts/GBP.py'
 alias list-wifi='nmcli dev wifi list'
@@ -135,3 +135,19 @@ fi
 eval "$(thefuck --alias)"
 
 source /home/tea/.config/broot/launcher/bash/br
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/tea/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/tea/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/tea/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/tea/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
